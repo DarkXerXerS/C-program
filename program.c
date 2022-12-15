@@ -105,7 +105,8 @@ int main()
         printf("The temp is currently in c");
     } else if( unit == 'F'){
         printf("The temp is currently in F");
-    } else {
+    }else if () 
+    else {
         printf("\n %c is not a VAild unit of measurmt", unit);
     }
 
