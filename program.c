@@ -106,7 +106,7 @@ int main()
     } else if( unit == 'F'){
         printf("The temp is currently in F");
     } else {
-        printf("\n %c is not a VAild unit of measurment", unit);
+        printf("\n %c is not a VAild unit of measurmt", unit);
     }
 
     return 0;
