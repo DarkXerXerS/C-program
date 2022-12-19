@@ -88,28 +88,62 @@ int main()
     //     break;
     // }
 
+    // char unit;
+    // float temp;
 
+    // printf("\n IS the temperature in (F) or (c)?:");
+    // scanf("%c", &unit);
 
+    // if(unit == 'c')
+    // {
+    //     printf("The temp is currently in c");
+    // } else if( unit == 'F'){
+    //     printf("The temp is currently in F");
+    // }
+    // else {
+    //     printf("\n %c is not a VAild unit of measurmt", unit);
+    // }
 
-    
+    char operator;
+    double num1;
+    double num2;
+    double result;
 
+    printf("\n Enter an operator (+ - * / )");
+    scanf("%c", &operator);
 
-    char unit;
-    float temp;
+    printf("Enter number 1: ");
+    scanf("%lf", &num1);
 
-    printf("\n IS the temperature in (F) or (c)?:");
-    scanf("%c", &unit);
+    printf("ENter number 2: ");
+    scanf("%lf", &num2);
 
-    if(unit == 'c')
+    switch (operator)
     {
-        printf("The temp is currently in c");
-    } else if( unit == 'F'){
-        printf("The temp is currently in F");
-    }else if () {
-        printf("enter a number")
-    }
-    else {
-        printf("\n %c is not a VAild unit of measurmt", unit);
+    case '+':
+        result = num1 + num2;
+        printf("\nresult: %lf", result);
+        break;
+
+          case '-':
+        result = num1 + num2;
+        printf("\nresult: %lf", result);
+        break;
+        
+          case '*':
+        result = num1 + num2;
+        printf("\nresult: %lf", result);
+        break;
+        
+          case '/':
+        result = num1 + num2;
+        printf("\nresult: %lf", result);
+        break;
+        
+
+        default:
+        printf("%c is not valid", operator);
+        break;
     }
 
     return 0;
