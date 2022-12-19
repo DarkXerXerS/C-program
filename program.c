@@ -1,18 +1,29 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 
-// FUNCTION IN C 
-double square(double x)
+// LOOPS IN C
+// WHILE LOOP
+
+int main()
 {
-    double result = x * x;
-    return result;
-}
+   char name[25];
+
+   printf("\n WHAT YOUR NAME?: ");
+   fgets(name, 25, stdin);
+   name[strlen(name) - 1] = '\0';
 
 
-int main ()
-{
- double x = square(2.00);
- printf("%.2lf", x);
+   while(strlen(name) == 0)
+   {
+    printf("\n You did not enter your name ");
+    printf("\nWhat is your name?:  ");
+    fgets(name, 25, stdin);
+    name[strlen(name) - 1] = '\0';
 
- return 0;
+   }
+
+//    printf("Hello %s", name);
+
+    return 0;
 }
