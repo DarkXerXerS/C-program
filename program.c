@@ -1,52 +1,18 @@
 #include <stdio.h>
-#include <math.h>
-#include <ctype.h>
+#include <stdbool.h>
 
 // OUTPUT & PRINTF FUNCTION
 int main()
 {
 
-    char operator;
-    double num1;
-    double num2;
-    double result;
+    float temp = 25;
+    bool sunny = 0;
 
-    printf("\n Enter an operator (+ - * / )");
-    scanf("%c", &operator);
-
-    printf("Enter number 1: ");
-    scanf("%lf", &num1);
-
-    printf("ENter number 2: ");
-    scanf("%lf", &num2);
-
-    switch (operator)
+    if(temp >= 0 && temp <= 30 && sunny)
     {
-    case '+':
-        result = num1 + num2;
-        printf("\nresult: %lf", result);
-        break;
-
-          case '-':
-        result = num1 + num2;
-        printf("\nresult: %lf", result);
-        break;
-        
-          case '*':
-        result = num1 + num2;
-        printf("\nresult: %lf", result);
-        break;
-        
-          case '/':
-        result = num1 + num2;
-        printf("\nresult: %lf", result);
-        break;
-        
-
-        default:
-        printf("%c is not valid", operator);
-        break;
+        printf("\n The weather is good!");
+    } else {
+        printf("\n The waether is bad! ");
     }
-
     return 0;
 }
