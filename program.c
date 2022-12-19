@@ -1,18 +1,21 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-// OUTPUT & PRINTF FUNCTION
+// FUNCTION IN C 
+
+void birthday()
+{
+    printf("\n Happy birthday to you!");
+    printf("\n Happy birthday to you!");
+    printf("\n Happy birthday dear ..... YOU!");
+    printf("\nHappy birthday to you!\n");
+}
+
 int main()
 {
+birthday();
+birthday();
+birthday();
 
-    float temp = 25;
-    bool sunny = 0;
-
-    if(temp >= 0 && temp <= 30 && sunny)
-    {
-        printf("\n The weather is good!");
-    } else {
-        printf("\n The waether is bad! ");
-    }
-    return 0;
+return 0; 
 }
