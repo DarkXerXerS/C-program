@@ -2,21 +2,17 @@
 #include <stdbool.h>
 
 // FUNCTION IN C 
-
-void birthday(char X[], int Y)
+double square(double x)
 {
-    printf("\n Happy birthday dear %s!", X);
-    printf("\n You are %d years old!", Y);
-
+    double result = x * x;
+    return result;
 }
 
-int main()
+
+int main ()
 {
-char name[] = "XerXerS_d_coder";
-int age = 18;
+ double x = square(2.00);
+ printf("%.2lf", x);
 
-
-birthday(name, age);
-
-return 0; 
+ return 0;
 }
