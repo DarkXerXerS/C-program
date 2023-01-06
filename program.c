@@ -5,25 +5,26 @@
 // LOOPS IN C
 // WHILE LOOP
 
-int main()
-{
-   char name[25];
-
-   printf("\n WHAT YOUR NAME?: ");
-   fgets(name, 25, stdin);
-   name[strlen(name) - 1] = '\0';
+int main() {
+    int pin = 0;
+    int tries = 0;
 
 
-   while(strlen(name) == 0)
-   {
-    printf("\n You did not enter your name ");
-    printf("\nWhat is your name?:  ");
-    fgets(name, 25, stdin);
-    name[strlen(name) - 1] = '\0';
+    printf("BANK OF CODECADMY\n");
+    printf("ENTER YOUR PIN:\n");
+    scanf("%d", &pin);
 
-   }
 
-//    printf("Hello %s", name);
 
-    return 0;
+    while (pin != 1234 && tries < 3)
+    {
+        printf("ENTER YOUR PIN\n");
+        scanf("%d", &pin);
+    }
+
+    if (pin == 1234) {
+        printf("PIN SUCCESSFUL\n");
+        printf("ACCESS GRANTED\n");
+    }
+    
 }
