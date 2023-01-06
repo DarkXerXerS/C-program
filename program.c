@@ -6,25 +6,27 @@
 // WHILE LOOP
 
 int main() {
-    int pin = 0;
+
+    int guess;
     int tries = 0;
 
+    printf("AM THINKING OF A NUMBER BETWEEN 1 - 10 \n");
+    printf("TRY GUESSING IT\n");
+    scanf("%d", &guess);
 
-    printf("BANK OF CODECADMY\n");
-    printf("ENTER YOUR PIN:\n");
-    scanf("%d", &pin);
-
-
-
-    while (pin != 1234 && tries < 3)
+    while (guess != 8 && tries < 50)
     {
-        printf("ENTER YOUR PIN\n");
-        scanf("%d", &pin);
-    }
+        printf("You got it wrong\n");
+        printf("TRY agin\n");
+        scanf("%d", &guess);
 
-    if (pin == 1234) {
-        printf("PIN SUCCESSFUL\n");
-        printf("ACCESS GRANTED\n");
+        tries++;
     }
     
+    if (guess == 8)
+    {
+        printf("YOU GOT IT RIGHT\n");
+    }
+    
+
 }
