@@ -6,27 +6,8 @@
 // WHILE LOOP
 
 int main() {
-
-    int learning = 1;
-    int cont; 
-
-
-    while(learning++ < 10) {
-        printf("Congratulations are you ready to move to the next leson\n");
-        printf("1 - YES\t2 - NO\n");
-
-        scanf("%d", &cont);
-
-        if (cont == 1) {
-            printf("YOU ARE AREADY TO MOVE TO THE NEXT LESSON\n");
-            break;
-        } else if ( cont ==2)
-        {
-            printf("continue with the present lesson\n");
-        } else {
-            printf("INVALID INPUT");
-        }
-        
-
-    }
+    int arr[] = {2,3,4,5};
+    arr[2] = 6;
+    int x = arr[2];
+    printf("%i\n",x);
 }
