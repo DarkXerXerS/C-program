@@ -7,26 +7,26 @@
 
 int main() {
 
-    int guess;
-    int tries = 0;
+    int learning = 1;
+    int cont; 
 
-    printf("AM THINKING OF A NUMBER BETWEEN 1 - 10 \n");
-    printf("TRY GUESSING IT\n");
-    scanf("%d", &guess);
 
-    while (guess != 8 && tries < 50)
-    {
-        printf("You got it wrong\n");
-        printf("TRY agin\n");
-        scanf("%d", &guess);
+    while(learning++ < 10) {
+        printf("Congratulations are you ready to move to the next leson\n");
+        printf("1 - YES\t2 - NO\n");
 
-        tries++;
+        scanf("%d", &cont);
+
+        if (cont == 1) {
+            printf("YOU ARE AREADY TO MOVE TO THE NEXT LESSON\n");
+            break;
+        } else if ( cont ==2)
+        {
+            printf("continue with the present lesson\n");
+        } else {
+            printf("INVALID INPUT");
+        }
+        
+
     }
-    
-    if (guess == 8)
-    {
-        printf("YOU GOT IT RIGHT\n");
-    }
-    
-
 }
